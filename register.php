@@ -109,6 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" value="<?= htmlspecialchars($email) ?>" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                                 <span class="text-danger"><?= $email_error ?></span>
                             </div>
                             <div class="mb-3">
